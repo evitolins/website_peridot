@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+	<head>
+		<title>Skincare & Relaxation Peridot</title>
+		<meta name="description" content="Skincare & Relaxation Peridot - Experience “a supreme bliss fulfilled with relaxation”" />
+		<meta content="skincare, relaxation, peridot, eyelash, extension, japanese, salon, facial, eye enhancement, green peel, greenpeel, peeling, wax, massage, Microdermabrasion, Oxygen, Microcurrent, Electroporation, Ultrasound" name="keywords">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<link rel="icon" href="img/favicon.png" type="image/x-icon">
+		<script type="text/javascript">
+		var THEME_ROOT = ''; var DEFAULT_BG_COLOR = '#fff';
+		</script>
+<link rel='stylesheet' id='style-css'  href='css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont1-css'  href='http://fonts.googleapis.com/css?family=Maven+Pro&#038;ver=3.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont2-css'  href='http://fonts.googleapis.com/css?family=Droid+Sans%3Aregular%2Cbold&#038;v1&#038;ver=3.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/main.js'></script>
+
+</head>
+	<body class="">
+	
+		<!-- this is where the fixed background gets inserted -->
+		<div id="background">
+			<div id="swf-bg">
+				<!-- the image in the style attribute is the backup image for non-flash -->
+				<div id="html-bg"></div>
+				<style type="text/css">
+				#html-bg {
+					background-image: url('img/bg_entrance.jpg');
+					filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg_entrance.jpg', sizingMethod='scale');
+					-ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/bg_entrance.jpg", sizingMethod="scale")';
+				}
+				</style>
+			</div>
+		</div>
+		<!-- so that right click shows normal menu, not flash menu -->
+		<div id="background-cover"></div>
+		
+				
+							
+		<div id="enter"><p class="center">Sorry, page you are looking for does not exsit. Go back to
+		<a href="home.html">home ></a>
+		</div>
+
+<script type="text/javascript">
+_uacct = "UA-2280264-2";
+urchinTracker();
+</script>
+</body>
+</html>

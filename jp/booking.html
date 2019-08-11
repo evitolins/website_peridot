@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+	<head>
+		<title>Skincare & Relaxation Peridot</title>
+		<meta name="description" content="Skincare & Relaxation Peridot - about" />
+		<meta content="skincare, relaxation, peridot, japanese, salon, facial, eye enhancement, green peel, greenpeel, peeling, Microdermabrasion, Oxygen, Microcurrent, Electroporation, Ultrasound, シンメトリー整顔, マイクロダ―マブレージョン, オキシジェン, ミラクルウエーブ, 超音波, エレクロトポレーション,グリコール酸, アンピュール, アイトリートメント, コラーゲン　マスク, 炭酸マスク, アロマセラピー, フェイスマッサージ, ネック＆デコテトリートメント, エクストラクション " name="keywords">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<link rel="icon" href="img/favicon.png" type="image/x-icon">
+		<script type="text/javascript">
+		var THEME_ROOT = ''; var DEFAULT_BG_COLOR = '#fff';
+		</script>
+<link rel='stylesheet' id='style-css'  href='css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont1-css'  href='http://fonts.googleapis.com/css?family=Maven+Pro&#038;ver=3.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont2-css'  href='http://fonts.googleapis.com/css?family=Droid+Sans%3Aregular%2Cbold&#038;v1&#038;ver=3.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/main.js'></script>
+<!-- Add jQuery library -->
+	<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.4"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.4" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+
+</head>
+	<body class="">
+	
+		<!-- this is where the fixed background gets inserted -->
+		<div id="background">
+			<div id="swf-bg">
+				<!-- the image in the style attribute is the backup image for non-flash -->
+				<div id="html-bg"></div>
+				<style type="text/css">
+				#html-bg {
+					background-image: url('img/bg_booking.jpg');
+					filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg_booking.jpg', sizingMethod='scale');
+					-ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/bg_booking.jpg", sizingMethod="scale")';
+				}
+				</style>
+			</div>
+		</div>
+		<!-- so that right click shows normal menu, not flash menu -->
+		<div id="background-cover"></div>
+		
+		<!-- this is the fixed menu/logo area -->
+		<div id="menu-wrapper" class="fade-in">
+			<div class="transp-border"></div>
+			<div id="menu-container">
+				<!-- logo image or text -->
+				<a href="home.html">
+					<img alt="skincare peridot"  id="logo-img"  src="img/logo.png"/>
+				</a>
+				<!-- BEGIN MENU AREA -->
+				<ul id="nav" class="">
+<li class="menu-item"><a href="home.html">Home</a></li>
+<li class="menu-item"><a href="about.html">About</a></li>
+<li class="menu-item"><a href="img/menu_japanese.pdf" target="_blank">Services</a>
+</li>
+<li class="menu-item on"><a href="booking.html">Booking</a></li>
+<li class="menu-item"><a href="location.html">Location</a></li>
+</ul>				<!-- END MENU AREA -->
+
+			</div>
+		</div>
+		
+<div id="content-align">
+			<div id="content-spacer">
+				<div id="content-wrapper">
+					<div id="content-container" class="fade-in">
+						<div class="transp-border" style="margin-bottom:-30px;"></div>
+						<div class="transp-bar-top"></div>
+						<div id="content-area" class="booking">
+							<!-- BEGIN CONTENT AREA -->								
+								
+																						<h1>Booking</h1>
+
+<p>ペリドットの予約がオンラインでもできるようになりました。 </p>
+<ol>
+<li>オンライン予約
+<div class="btn"><a href="http://www.secure-booker.com/skincareperidot/BookOnlineStart.aspx" target="_blank">予約する</a></div>
+<div class="btn"><a href="http://www.secure-booker.com/skincareperidot/InstantGiftCertificate.aspx" target="_blank">ギフトを購入する</a></div>
+
+</li>
+<li>電話予約
+<p class="book">Call 424.465.9211</p></li>
+<li>Emailでの予約
+<p class="book"><a href="mailto:info@skincareperidot.com">info@skincareperidot.com</a></p></li>
+</ol>
+
+<p>facebookをLikeしていただくとプロモーションなどお得な情報をご覧になれます。</p>
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FSkinCarePeridot&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font=arial&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=118866341544631" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:21px;" allowTransparency="true"></iframe>
+
+<p>キャンセル料について</p> 
+				
+<p class="smalltxt">当サロンでは、ご利用される全てのお客様に気持ち良く過ごして頂き、ご満足いただけるように日々心がけております。</p>
+<p class="smalltxt">これまで、キャンセルにつきましてはキャンセル料を頂戴しておりませんでしたが、当日のキャンセルや変更によって他のお客様に必要以上にご迷惑をおかけしてしまう事が増えてきたため、止むを得ず以下のルールとさせて頂きます。 </p>
+<p class="smalltxt">キャンセルは必ずご予約の前日の営業時間内迄にご連絡をお願い致します。</p>
+<p class="smalltxt">当日のキャンセルは大変申し訳ございませんがお受けしかねます。ご予約時はお客様のご予定をよくご確認の上ご予約ください。
+止むを得ない事情で当日キャンセルされる場合は、ご予約メニューの５０％の金額を請求させて頂きますのでご了承下さい。
+事前にご連絡がなくキャンセルをされたお客様に関しましては、ご予約メニューの全額を請求させて頂きますのでご了承下さい。</p>
+<p class="smalltxt">無断キャンセルは他のご予約希望のお客様に多大なご迷惑をおかけしてしまいますので、何卒当店のルールをご理解頂きたく存じます。 
+</p>
+
+
+
+							
+							</div>						
+						</div>
+						<div class="transp-bar-bot"></div>
+					</div>
+				</div>
+			</div>
+		</div>																		
+				
+							
+		<div id="footer"><p class="left">© 2007-2017 skincare peridot all right reserved.</p>
+			
+			<p class="right">
+			<a href="http://www.facebook.com/SkinCarePeridot" target="_blank"><img src="../img/icon_fb.png" class="icon"></a>
+			<a href="https://www.instagram.com/explore/locations/333252853/skin-care-peridot/" target="_blank"><img src="../img/icon_ig.png" class="icon"></a>
+			<a href="http://yelp.com/biz/skincare-peridot-los-angeles-2?utm_medium=badge_star_rating_reviews&amp;utm_source=biz_review_badge" target="_blank"><img src="../img/icon_yelp.png" class="icon"></a>
+					
+		skincare & relaxation peridot  424.465.9211 | 2362 Westwood Blvd. Suite #1 Los Angeles, CA 90064</p></div>
+
+<script type="text/javascript">
+_uacct = "UA-2280264-2";
+urchinTracker();
+</script>
+</body>
+</html>

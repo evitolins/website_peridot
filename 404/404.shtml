@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>HTTP Error 404 – Not Found</title>
+<style type="text/css">
+	body {
+	font:Arial, Helvetica, sans-serif;
+	background-color: #4481c2;
+}
+	#content {margin-left:32px;  margin-top:5px; width:90%;}
+</style>
+</head>
+
+<body>
+
+<div id="content">
+<h1>HTTP Error 404 – Not Found</h1>
+<hr />
+ <p>HTTP Error 404 – Not Found</p>
+<p>	I'm sorry <strong><!–-#echo var="HTTP_REFERER" -–><!--#echo var="REQUEST_URI" --></strong> cannot be found. It may have been removed, had it's name changed, or is temporarily unavailable.</p>
+<ul>
+  <li>If you typed the URL, please check the spelling.</li>
+  <li>Please report the bad link to the page owner of the previous page. </li>
+  <li>Click the <a href="javascript:history.back(1);">back</a> button and try another link.</li>
+</ul>
+</p>
+  <hr />
+ 
+
+  <div align="right">Hosting provided by <a href="http://www.n1corp.com"><img src="http://www.n1corp.com/images/error/logo.jpg" alt="N1corp" width="250" height="80" border="0" longdesc="http://www.n1corp.com" /></a></div>
+</div>
+
